@@ -1,0 +1,26 @@
+
+.card-header{
+    background-color: #a1ab89;
+}
+.card-footer{
+    background-color: #a1ab89;
+}
+
+.navbar{
+    background-color: #a1ab89;
+    color: black;
+    font-weight: bold;
+}
+
+.footer{
+    background-color:#7c826e;
+    color: black;
+}
+
+.footer a {
+    color: black;
+}
+
+.footer a:hover {
+    color: lightblue;
+}
