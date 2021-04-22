@@ -1,0 +1,70 @@
+
+.card-header{
+    background-color: #a1ab89;
+}
+.card-footer{
+    background-color: #a1ab89;
+}
+
+.navbar{
+    background-color: #a1ab89;
+    color: black;
+    font-weight: bold;
+    border-bottom: solid black;
+}
+
+.footer{
+    background-color:#7c826e;
+    color: black;
+}
+
+.footer a {
+    color: black;
+}
+
+.footer a:hover {
+    color: lightblue;
+}
+
+.carousel .carousel-indicators li{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: black;
+    
+}
+
+.carousel-indicators .active{
+    background-color: black;
+}
+
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  outline: black;
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  background-image: none;
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 55px;
+  color: black;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color: black;
+}
+
+.carousel img { 
+    border-bottom: 3px solid black;
+
+    
+}
+
