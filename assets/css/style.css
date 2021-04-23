@@ -1,4 +1,7 @@
 
+/*
+Cards
+*/
 .card-header{
     background-color: #a1ab89;
 }
@@ -6,6 +9,9 @@
     background-color: #a1ab89;
 }
 
+/*
+NavBar
+*/
 .navbar{
     background-color: #a1ab89;
     color: black;
@@ -13,6 +19,9 @@
     border-bottom: solid black;
 }
 
+/*
+Footer
+*/
 .footer{
     background-color:#7c826e;
     color: black;
@@ -26,6 +35,9 @@
     color: lightblue;
 }
 
+/*
+Carousel
+*/
 .carousel .carousel-indicators li{
     width: 10px;
     height: 10px;
@@ -37,7 +49,6 @@
 .carousel-indicators .active{
     background-color: black;
 }
-
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
@@ -63,11 +74,7 @@
 }
 
 .carousel img { 
-    border-bottom: 3px solid black;
-
-    
+    border-bottom: 3px solid black;    
 }
 
-.card-footer{
-    background-color: #a1ab89;
-}
+
