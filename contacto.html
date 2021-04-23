@@ -50,6 +50,172 @@
         </div>
     </nav><!--Fin del NavBar-->
 
+
+    <!--Formulario de contacto-->
+
+        <!---->
+    <main class="container mb-4 mt-4">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header" style="color: black;">
+                        <h3 class="card.title" >Registro de mascota</h3>
+                    </div>
+                    <div class="card-body">
+                        <!-- Formulario -->
+                        <form action="#" method="GET" enctype="text/plain">
+                            <div class="form-group">
+                                <!--Agruár componentes usando FORM-GROUP-->
+                                <label class="font-weight-bold" for="rut">Rut:</label>
+                                <input class="form-control" type="text" id="rut" name="rut" placeholder="Ej. 12345678-9" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="font-weight-bold" for="rut">Nombre:</label>
+                                <input class="form-control" type="text" id="Nombre" name="Nombre" placeholder="Ej. Pedro Perez" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="font-weight-bold" for="rut">Nombre de tu masctoa:</label>
+                                <input class="form-control" type="text" id="Nombre_mascotas" name="Nombre_mascota" placeholder="Ej. Cachupin" required>
+                            </div>
+
+                            <!--Agrupar componentes usando FROM-GROUP-ROW-->
+                            <div class="form-group row" >
+                                <label for="email" class="col-sm-5 col-form-label font-weight-bold">Email:</label>
+                                <div class="col-sm-7">
+                                    <input class="form-control" type="text" id="email" name="email" placeholder="Ej. tucorreo@correo.com"  required>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="fecha_ins" class="col-sm-5 col-form-label font-weight-bold">Fecha inscripcion de su mascota:</label>
+                                <input class="form-control" type="date" id="fecha_ins" name="fecha_ins">
+                            </div>
+
+                            <!--Radiobutton-->
+                            <div class="form-group row">
+                                <label for="genero" class="col-sm-5 font-weight-bold">Seleccione el genero de su mascota:</label>
+                                <div class="col-sm-7">
+                                    <div class="form-check">
+                                        <div class="form-check-label">
+                                            <label for="macho" class="form-check-label">
+                                                <input type="radio" class="form-check-input" name="genero_mascota" id="macho" value="Macho" checked>Macho
+                                            </label>
+                                        </div>
+                                        <div class="form-check-label">
+                                            <label for="hembra" class="form-check-label">
+                                                <input type="radio" class="form-check-input" name="genero_mascota" id="hembra" value="Hembra">Hembra
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label for="tamaño" class="col-sm-5 font-weight-bold">Seleccione el tamaño de su mascota:</label>
+                                <div class="col-sm-7">
+                                    <div class="form-check">
+                                        <div class="form-check-label">
+                                            <label for="pequeño" class="form-check-label">
+                                                <input type="radio" class="form-check-input" name="tamaño_mascota" id="pequeño" value="Pequeño" checked>Pequeño
+                                            </label>
+                                        </div>
+                                        <div class="form-check-label">
+                                            <label for="mediano" class="form-check-label">
+                                                <input type="radio" class="form-check-input" name="tamaño_mascota" id="mediano" value="Mediano">Mediano
+                                            </label>
+                                        </div>
+                                        <div class="form-check-label">
+                                            <label for="grande" class="form-check-label">
+                                                <input type="radio" class="form-check-input" name="tamaño_mascota" id="grande" value="Grande">Grande
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--Checkbox-->
+                            <div class="form-group">
+                                <label for="deportes" class="font-weight-bold">Asesoria/s que necesita:</label>
+                                <div class="form-check">
+                                    <div class="form-check-label">
+                                        <label for="adiestramiento" class="font-check-label" >
+                                            <input type="checkbox" class="form-check-input" id="adiestramiento" name="adiestramiento" value="Adiestramiento"> Adiestramiento
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form-check">
+                                    <div class="form-check-label">
+                                        <label for="peluqueria" class="font-check-label" >
+                                            <input type="checkbox" class="form-check-input" id="peluqueria" name="peluqueria" value="Peluqueria"> Peluqueria
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form-check">
+                                    <div class="form-check-label">
+                                        <label for="alimentacion" class="font-check-label" >
+                                            <input type="checkbox" class="form-check-input" id="alimentacion" name="alimentacion" value="Alimentacion"> Alimentación
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form-check">
+                                    <div class="form-check-label">
+                                        <label for="otro" class="font-check-label" >
+                                            <input type="checkbox" class="form-check-input" id="otro" name="otro" value="Otro"> Otro
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--Select o Listbox-->
+                            <div class="form-group">
+                                <label for="comuna" class="font-weight-label">Comuna:</label>
+                                <select name="comuna" id="comuna" class="form-control">
+                                    <option value="Santiago">Santiago Centro</option>
+                                    <option value="Santiago">Estacion central</option>
+                                    <option value="Santiago">La florida</option>
+                                    <option value="Santiago">Puente Alto</option>
+                                    <option value="Santiago">Vitacura</option>
+                                    <option value="Santiago">Las Condes</option>
+                                    <option value="Santiago">Ñuñoa</option>
+                                    <option value="Santiago">Maipu</option>
+                                    <option value="Santiago">Renca</option>
+                                    <option value="Santiago">San Bernardo</option>
+                                    <option value="Santiago">San Joaquin</option>
+                                </select>
+                            </div>
+
+                            <!--texttarea-->
+                            <div class="form-group">
+                                <label for="comentarios" class="font-weight-bold">Comentarios:</label>
+                                <textarea name="comentarios" id="comentarios"  rows="5" class="form-control"></textarea>
+                            </div>
+
+                            <!--Toggle button o switch-->
+                            <div class="form-group">
+                                <div class="custom-control custom-switch">
+                                    <input class="custom-control-input" type="checkbox" name="aceptar_terminos" id="aceptar_terminos">
+                                    <label for="aceptar_terminos" class="custom-control-label">Aceptar los terminos del contrato</label>
+                                </div>
+                            </div>
+
+
+
+                            <!-- Botones-->
+                            <div class="form-group">
+                                <input type="submit" class="btn btn-primary" id="registrar" value="Registrar">
+                                <input type="reset" class="btn btn-secondary" id="cancelar" value="Cancelar">
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <img class="d-none d-md-block" src="http://picsum.photos/500/1000" alt="Imagen aleatoria" width="100%" height="100%">
+            </div>
+        </div>
+    </main>
+
    
     
 
