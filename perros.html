@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
     <link rel="shortcut icon" href="assets/img/huella_perro.png">
 </head>
-<body style="background-color: rgb(245, 245, 219);" background="assets/img/fondo_huellas.jpg">
+<body style="background-color: rgb(245, 245, 219);" onload="startTime()">
 
     <!--NavBar-->
     <nav class="navbar navbar-expand-lg navbar-light">
@@ -44,12 +44,38 @@
                     <a class="nav-link" href="contacto.html">Contactanos</a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link" href="veterinarios.html">Veterinarios</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="acerca_de.html">Sobre nosotros</a>
                 </li>
 
             </ul>
         </div>
     </nav><!--Fin del NavBar-->
+
+    <div class="container" style="border-bottom: solid black 3px;">
+        <section >
+            <div class="row">
+                <div class="col" style="background-color: #7c826e;">
+                    <div class="col">
+                        <div id="clockdate">
+                            <div class="clockdate-wrapper">
+                              <div id="clock"></div>
+                              <div id="date"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col" style="text-align: right;">
+                        <button style="border-color: rgb(245, 245, 219) ;" class="btn btn-dark" type="button" onclick="apagarLuzPerro()">Modo Obscuro</button> 
+                        <button style="border-color: #343a40; background-color: rgb(245, 245, 219); color: #343a40;" class="btn btn-dark" type="button" onclick="encenderLuzPerro()">Modo Claro</button> 
+                    </div>
+                     
+                </div>
+                           
+            </div>
+        </section>
+    </div>
 
     <!--Titulo pagina-->
     <div class="container mt-4 mb-4">
@@ -111,11 +137,11 @@
 
     <!--Containers que guardan la estructura con la informacion correspondiente-->
     <div class="container" id="cuidadosgeneralesperro">
-        <div class="row justify-content-center" style="background-color: #a1ab89;">
+        <div id="titulotextoperro1" class="row justify-content-center" style="background-color: #a1ab89;">
             <h1>Cuidados generales para tu perro</h1>
         </div>
         <div class="row" style="text-align: left;">
-            <div style="border: 10px solid #a1ab89; background-color: #e1e6d4;">
+            <div id="parrafoperro1" style="border: 10px solid #a1ab89; background-color: #e1e6d4;">
                 <p>Es un hecho que una gran cantidad de personas posen un perro como compañero de vida, lo quieren y respentan como a un hijo
                     , pero eso no quiere decir que todos y todas esten preparados para la responsabilidad que conlleva tener un perro. Es por eso que te ayudaremos
                     dandote conesjos y tips para darle una buena vida a tu mascota.</p>
@@ -178,11 +204,11 @@
     </div>
     <br>
     <div class="container" id="educarperro">
-        <div class="row justify-content-center" style="background-color: #a1ab89;">
+        <div id="titulotextoperro2" class="row justify-content-center" style="background-color: #a1ab89;">
             <h1>Educacíon para tu perro</h1>
         </div>
         <div class="row" style="text-align: left;">
-            <div style="border: 10px solid #a1ab89; background-color: #e1e6d4;">
+            <div id="parrafoperro2" style="border: 10px solid #a1ab89; background-color: #e1e6d4;">
                 <p>Educar perros es una tarea sencilla cuando sabes cómo hacerlo y cuando no tratas de apurar las cosas. Sin embargo, educar a un perro te puede parecer una tarea imposible si sigues los consejos incorrectos.</p>
                 <ul>
                     <br>
@@ -230,11 +256,11 @@
     </div>
     <br>
     <div class="container" id="atencionperro">
-        <div class="row justify-content-center" style="background-color: #a1ab89;">
+        <div id="titulotextoperro3" class="row justify-content-center" style="background-color: #a1ab89;">
             <h1>Atencion y compañia para tu perro</h1>
         </div>
         <div class="row" style="text-align: left;">
-            <div  style="border: 10px solid #a1ab89; background-color: #e1e6d4;">
+            <div id="parrafoperro3" style="border: 10px solid #a1ab89; background-color: #e1e6d4;">
                 <p>Por naturaleza, los perros son criaturas muy sociales es por eso que es importante que le dediques tiempo a tu perro. Los perros, y los cachorros en particular, son muy activos y necesitan una gran cantidad de estímulos mentales y físicos.</p>
                 <ul>
                     <br>
@@ -278,9 +304,9 @@
     <section style="background-color: #a1ab89; text-align: center;" id="referencias">
         <h1>Referencias</h1>
         <hr>
-        <a href="https://www.expertoanimal.com/consejos-para-educar-perros-21112.html" target="_blank" style="color: black;">Expertoanimal.com</a>
+        <a id="referenciaperro1" href="https://www.expertoanimal.com/consejos-para-educar-perros-21112.html" target="_blank" style="color: black;">Expertoanimal.com</a>
         <hr>
-        <a href="https://www.purina-latam.com/guia-de-cuidados-chile" target="_blank" style="color: black;">Purina latam</a>
+        <a id="referenciaperro2" href="https://www.purina-latam.com/guia-de-cuidados-chile" target="_blank" style="color: black;">Purina latam</a>
         <br>
         <br>
     </section>
@@ -319,6 +345,9 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="gatos.html">--> Sobre Gatos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="veterinarios.html">--> Veterinarios</a>
                         </li>
                         
                     </ul>
@@ -362,6 +391,7 @@
     <script src="assets/js/jquery-3.5.1.slim.min.js"></script>
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/javascript.js"></script>
 
 </body>
 </html>

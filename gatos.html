@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
     <link rel="shortcut icon" href="assets/img/huella_perro.png">
 </head>
-<body style="background-color: rgb(245, 245, 219);" background="assets/img/fondo_huellas.jpg">
+<body style="background-color: rgb(245, 245, 219);"  onload="startTime()">
 
     <!--NavBar-->
     <nav class="navbar navbar-expand-lg navbar-light">
@@ -44,6 +44,9 @@
                     <a class="nav-link" href="contacto.html">Contactanos</a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link" href="veterinarios.html">Veterinarios</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="acerca_de.html">Sobre nosotros</a>
                 </li>
 
@@ -51,6 +54,29 @@
         </div>
     </nav><!--Fin del NavBar-->
     
+    <div class="container" style="border-bottom: solid black 3px;">
+        <section >
+            <div class="row">
+                <div class="col" style="background-color: #7c826e;">
+                    <div class="col">
+                        <div id="clockdate">
+                            <div class="clockdate-wrapper">
+                              <div id="clock"></div>
+                              <div id="date"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col" style="text-align: right;">
+                        <button style="border-color: rgb(245, 245, 219) ;" class="btn btn-dark" type="button" onclick="apagarLuzGato()">Modo Obscuro</button> 
+                        <button style="border-color: #343a40; background-color: rgb(245, 245, 219); color: #343a40;" class="btn btn-dark" type="button" onclick="encenderLuzGato()">Modo Claro</button> 
+                    </div>
+                     
+                </div>
+                           
+            </div>
+        </section>
+    </div>
+
     <!--Titulo pagina-->
     <div class="container mt-4 mb-4">
         <section style="background-color:#a1ab89;" >
@@ -111,11 +137,11 @@
     <br>
     <!--Containers que guardan la estructura con la informacion correspondiente-->
     <div class="container" id="cuidadosgeneralesgato">
-        <div class="row justify-content-center" style="background-color: #a1ab89;">
+        <div  id="titulotextogato1" class="row justify-content-center" style="background-color: #a1ab89;">
             <h1>Cuidados generales para tu gato</h1>
         </div>
         <div class="row" style="text-align: left;">
-            <div style="border: 10px solid #a1ab89; background-color: #e1e6d4;">
+            <div id="parrafogato1" style="border: 10px solid #a1ab89; background-color: #e1e6d4;">
                 <p>Los gatos dependen de las personas para todo lo que necesitan – alimento, agua limpia, una caja de arena limpia, atención veterinaria y lo que es más importante, cariño y amor. Aquí te damos algunos consejos esenciales para mantener a tu amigo felino feliz y seguro.</p>
                 <ul>
                     <li style="font-weight: bold;">Mantener su caja de arena siempre limpia:</li>
@@ -152,11 +178,11 @@
     </div>
     <br>
     <div class="container" id="educargato">
-        <div class="row justify-content-center" style="background-color: #a1ab89;">
+        <div id="titulotextogato2" class="row justify-content-center" style="background-color: #a1ab89;">
             <h1>Como educar a tu gato</h1>
         </div>
         <div class="row" style="text-align: left;">
-            <div style="border: 10px solid #a1ab89; background-color: #e1e6d4;">
+            <div id="parrafogato2" style="border: 10px solid #a1ab89; background-color: #e1e6d4;">
                 <p>  Antes de comenzar a educar a un gato, debes tener muy presente que un gato no es un perro, es un error común en personas que han tenido antes perro y nunca han tenido un gato. Así que olvida intentar enseñarle a hacer trucos como: que te de la patita o te traiga la pelota.</p>
                 <ul>
                     <li style="font-weight: bold;">Enseñar a un gato a usar la caja de arena</li>´
@@ -194,11 +220,11 @@
     </div>
     <br>
     <div class="container" id="atenciongato">
-        <div class="row justify-content-center" style="background-color: #a1ab89;">
+        <div id="titulotextogato3" class="row justify-content-center" style="background-color: #a1ab89;">
             <h1>Atencion y compañia para gatos</h1>
         </div>
         <div class="row" style="text-align: left;">
-            <div style="border: 10px solid #a1ab89; background-color: #e1e6d4;">
+            <div id="parrafogato3" style="border: 10px solid #a1ab89; background-color: #e1e6d4;">
                 <p>Se suele pensar que los gatos son mas independientes y que no requieren de mucho atencion, pero esto está muy alejado de la realidadm, estos felinos sin una buena atencion y compañia pueden generar enfermedades como la depresion y el estres, por esto siempre es bueno acompañar a tu gato y atenderlo como corresponde</p>
                 <ul>
                     <li style="font-weight: bold;">Es importante cepillar a tu gato y la mejor forma de hacerlo es la siguiente:</li>
@@ -249,11 +275,11 @@
     <section style="background-color: #a1ab89; text-align: center;" id="referencias">
         <h1>Referencias</h1>
         <hr>
-        <a style="color: black;" href="https://www.petalatino.com/blog/el-cuidado-de-los-gatos/" target="_blank">PETA Latino</a>
+        <a id="referenciagato1" style="color: black;" href="https://www.petalatino.com/blog/el-cuidado-de-los-gatos/" target="_blank">PETA Latino</a>
         <hr>
-        <a style="color: black;" href="https://www.elespanol.com/como/20190131/educar-gato-profesional/372214283_0.html" target="_blank">elespanol.com</a>
+        <a id="referenciagato2" style="color: black;" href="https://www.elespanol.com/como/20190131/educar-gato-profesional/372214283_0.html" target="_blank">elespanol.com</a>
         <hr>
-        <a style="color: black;" href="https://www.purina-latam.com/mx/purina/nota/gatitos/como-cuidar-a-un-gato-y-como-asearlo"target="_blank">Purina Latam</a>
+        <a id="referenciagato3" style="color: black;" href="https://www.purina-latam.com/mx/purina/nota/gatitos/como-cuidar-a-un-gato-y-como-asearlo"target="_blank">Purina Latam</a>
         <br>
         <br>
     </section>
@@ -297,6 +323,9 @@
                         <li class="nav-item">
                             <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">--> Sobre Gatos</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="veterinarios.html">--> Veterinarios</a>
+                        </li>
                     </ul>
                 </div>
                 <div class="col-sm-12 col-md-3 col-lg-3 mt-4 text-center">
@@ -338,6 +367,7 @@
     <script src="assets/js/jquery-3.5.1.slim.min.js"></script>
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/javascript.js"></script>
 
 </body>
 </html>

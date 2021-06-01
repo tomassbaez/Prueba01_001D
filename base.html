@@ -17,13 +17,14 @@
 
     <!--cargar fontawesome iconos-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="shortcut icon" href="assets/img/huella_perro.png">
 </head>
-<body>
+<body onload="startTime()">
 
     <!--NavBar-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="index.html">
-            <img src="assets/img/kisspng-dogcat-relationship-pet-sitting-dogcat-relat-5b09426dd947c4.25978543152733348589.png" alt="LOGO" width="80px" height="80px">
+            <img src="assets/img/logo.png" alt="LOGO" width="80px" height="80px">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -50,7 +51,19 @@
         </div>
     </nav><!--Fin del NavBar-->
 
-   
+    <div class="container">
+        <div class="row">
+            <div id="clockdate">
+                <div class="clockdate-wrapper">
+                  <div id="clock"></div>
+                  <div id="date"></div>
+                </div>
+            </div>
+            <button class="btn btn-success" type="button" onclick="apagarLuz()">Presioname si quieres apagar la Luz</button>
+        </div>
+        
+    </div>
+    
     
 
 
@@ -61,7 +74,7 @@
             <div class="row">
                 
                 <div class="col-sm-12 col-md-3 col-lg-3 text-center mt-4">
-                    <img src="assets/img/kisspng-dogcat-relationship-pet-sitting-dogcat-relat-5b09426dd947c4.25978543152733348589.png" alt="LOGO" width="80px" height="80px">
+                    <img src="assets/img/logo.png" alt="LOGO" width="80px" height="80px">
                 </div>
                 <div class="col-sm-12 col-md-3 col-lg-3 mt-4">
                     <h6 class="display-6">Pet care</h6>                   
@@ -134,6 +147,7 @@
     <script src="assets/js/jquery-3.5.1.slim.min.js"></script>
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/javascript.js"></script>
 
 </body>
 </html>
