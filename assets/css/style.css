@@ -25,13 +25,13 @@ NavBar
 */
 .navbar{
     position: fixed;
+    padding: 1px;
     z-index: 20;
     width: 100%;
     background-color: #a1ab89;
     color: black;
     font-weight: bold;
-    border-bottom: solid black;
-    
+    border-bottom: solid black;   
 }
 
 /*
@@ -99,7 +99,7 @@ reloj
 
 .clockdate-wrapper {
     background-color: #7c826e;
-    padding: 20px;
+    padding: 5px;
     max-width:350px;
     width:100%;
     text-align:start;

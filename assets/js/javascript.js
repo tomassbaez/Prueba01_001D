@@ -43,6 +43,7 @@ function apagarLuz() {
     var letraOscura = '#343a40';
     var letraClara = "white";
     var tipoborde = "10px solid #343a40";
+    var colorseccionoscuro = "#707d54";
 
     document.body.style.background = colorOscuro;
     document.body.style.color = letraClara;
@@ -50,6 +51,7 @@ function apagarLuz() {
     document.getElementById("seccion1").style.borderLeft = tipoborde;
     document.getElementById("seccion1").style.borderRight = tipoborde;
     document.getElementById("seccion1").style.color = letraClara;
+    document.getElementById("seccion1").style.background = colorseccionoscuro;
     document.getElementById("cardindex").style.background = colorClarocard;
     document.getElementById("cardindex").style.color = letraOscura;
     document.getElementById("cardindex2").style.background = colorClarocard;
@@ -67,13 +69,14 @@ function encenderLuz() {
   var colorOscuro = '#343a40';
   var letraClara = "white";
   var tipoborde = "10px solid rgb(245, 245, 219)";
-
+  var colorseccionclaro ="rgb(180, 185, 98)";
   document.body.style.background = colorClaro;
   document.body.style.color = letraOscura;
 
   document.getElementById("seccion1").style.borderLeft = tipoborde
   document.getElementById("seccion1").style.borderRight = tipoborde
   document.getElementById("seccion1").style.color = letraOscura
+  document.getElementById("seccion1").style.background = colorseccionclaro;
   document.getElementById("cardindex").style.background = colorOscuro
   document.getElementById("cardindex").style.color = letraClara
   document.getElementById("cardindex2").style.background = colorOscuro
