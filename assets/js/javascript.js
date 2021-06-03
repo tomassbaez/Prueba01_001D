@@ -100,6 +100,7 @@ function apagarLuzGato() {
   document.body.style.color = letraClara;
 
   document.getElementById("titulotextogato1").style.background = fondoparrafosgato;
+  document.getElementById("titulopaginagato").style.background = fondoparrafosgato;
   document.getElementById("parrafogato1").style.background = textoparrafogato;
   document.getElementById("parrafogato1").style.border = bordeparrafogato;
   document.getElementById("titulotextogato2").style.background = fondoparrafosgato;
@@ -127,6 +128,7 @@ function encenderLuzGato() {
   document.body.style.color = letraOscura
 
   document.getElementById("titulotextogato1").style.background = fondoparrafosgato
+  document.getElementById("titulopaginagato").style.background = fondoparrafosgato;
   document.getElementById("parrafogato1").style.background = textoparrafogato
   document.getElementById("parrafogato1").style.border = bordeparrafogato
   document.getElementById("titulotextogato2").style.background = fondoparrafosgato
@@ -155,6 +157,7 @@ function apagarLuzPerro() {
   document.body.style.color = letraClara;
 
   document.getElementById("titulotextoperro1").style.background = fondoparrafosperro;
+  document.getElementById("titulopaginaperro").style.background = fondoparrafosperro;
   document.getElementById("parrafoperro1").style.background = textoparrafoperro;
   document.getElementById("parrafoperro1").style.border = bordeparrafoperro;
   document.getElementById("titulotextoperro2").style.background = fondoparrafosperro;
@@ -181,6 +184,7 @@ function encenderLuzPerro() {
   document.body.style.color = letraOscura;
 
   document.getElementById("titulotextoperro1").style.background = fondoparrafosperro;
+  document.getElementById("titulopaginaperro").style.background = fondoparrafosperro;
   document.getElementById("parrafoperro1").style.background = textoparrafoperro;
   document.getElementById("parrafoperro1").style.border = bordeparrafoperro;
   document.getElementById("titulotextoperro2").style.background = fondoparrafosperro;
@@ -285,3 +289,4 @@ $('textarea').keyup(function() {
   $('#chars4').text(length);
   $('#chars3').text($(this).val().length);
 });
+
